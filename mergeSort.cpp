@@ -17,7 +17,7 @@ vector<int> mergeSort::separateVector(vector<int> &ar, int startVal, int endVal)
 }
 
 void mergeSort::mergeSort(vector<int> &ar){
-    if(ar.size() > 1){}
+    if(ar.size() > 1){
         int frontVal = ar.front();
         int backVal = ar.back();
         if(frontVal < backVal){
@@ -29,6 +29,9 @@ void mergeSort::mergeSort(vector<int> &ar){
             int length = backHalf.size();
             for(int i = 0; i < length; i++){
                 frontHalf.push_back(backHalf[i]);
+            }
+            for(int i = 0; i < ar.size(); i++){
+                ar[i] = frontHalf[i];
             }
         }
     }
