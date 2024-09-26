@@ -9,6 +9,6 @@ class mergeSort{
     public:
         void mergeSort(std::vector<int> &ar);
 
-}
+};
 
 #endif //MERGESORT_H

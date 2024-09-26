@@ -11,6 +11,6 @@ class selectionSort{
 
         void selectionSortB(std::vector<int> &ar);
 
-}
+};
 
 #endif //SELECTIONSORT_H
