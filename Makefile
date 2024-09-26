@@ -1,11 +1,10 @@
 CC = g++
-CFLAGS = -g -Wall -Wextra
-TARGET = SortingAlgos
+CFLAGS = -g -Wall
 
-all: $(TARGET)
+default: main
 
-$(TARGET): selectionSort.o mergeSort.o quickSort.o main.o
-	$(CC) $(CFLAGS) -o $(TARGET) selectionSort.o mergeSort.o quickSort.o main.o
+main: selectionSort.o mergeSort.o quickSort.o main.o
+	$(CC) $(CFLAGS) -o main selectionSort.o mergeSort.o quickSort.o main.o
 
 selectionSort.o: selectionSort.cpp selectionSort.h
 	$(CC) $(CFLAGS) -c selectionSort.cpp
@@ -19,6 +18,5 @@ quickSort.o: quickSort.cpp quickSort.h
 main.o: main.cpp selectionSort.h mergeSort.h quickSort.h
 	$(CC) $(CFLAGS) -c main.cpp
 
-#Clean up files
 clean:
-	$(RM) $(TARGET) *.o *~
+	$(RM) main *.o *~
