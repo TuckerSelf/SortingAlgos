@@ -9,7 +9,7 @@ vector<int> mergeSort::separateVector(vector<int> &ar, int startVal, int endVal)
     while(ar[startPos] != startVal){
         startPos++;
     }
-    while(ar[startPos] != endVal && startPos <= ar.size()){
+    while(ar[startPos] != endVal && startPos < ar.size()){
         output.push_back(ar[startPos]);
         startPos++;
     }

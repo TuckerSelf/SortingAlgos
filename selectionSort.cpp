@@ -5,7 +5,7 @@ using namespace std;
 
 void selectionSort::selectionSortA(vector<int> &ar){
     int length = ar.size();
-    if(length >= 1){
+    if(length > 1){
         for(int i = 0; i < length; i++){
             for(int j = i++; j < length; j++){
                 if(ar[j] < ar[i]){
@@ -20,7 +20,7 @@ void selectionSort::selectionSortA(vector<int> &ar){
 
 void selectionSort::selectionSortB(vector<int> &ar){
     int length = ar.size();
-    if(length >= 1){
+    if(length > 1){
         for(int i = 0; i < length; i++){
             int min = i;
             for(int j = i++; j < length; j++){
