@@ -17,14 +17,17 @@ int main() {
     selectionSortA(ranVect);
     printVector(ranVect);
     cout << "Using SelectionSortB..." << endl;
+    ranVect.clear();
     regenerateVector(ranVect, 100);
     selectionSortB(ranVect);
     printVector(ranVect);
     cout << "Using MergeSort..." << endl;
+    ranVect.clear();
     regenerateVector(ranVect, 100);
     mergeSort(ranVect);
     printVector(ranVect);
     cout << "Using QuickSort..." << endl;
+    ranVect.clear();
     regenerateVector(ranVect, 100);
     quickSort(ranVect);
     printVector(ranVect);
