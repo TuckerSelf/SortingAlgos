@@ -29,7 +29,8 @@ int main() {
     quickSort(ranVect);
     printVector(ranVect);
 
-    
+    ranVect.clear();
+
     return 0;
 }
 
